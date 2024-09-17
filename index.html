@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and inputs</title>
+  </head>
+  <body>
+    <h1>Forms and Inputs</h1>
+    <form action="">
+      <!-- Text input -->
+      <label for="first-name"></label>
+      <input
+        type="text"
+        name="first-name"
+        id="first-name"
+        placeholder="sravya"
+        minlength="3"
+        maxlength="5"
+      />
+      <br />
+      <!-- radio button input -->
+      <p>What brand of car do you drive</p>
+      <label for="fiat">fiat</label>
+      <input id="Fiat" type="radio" />
+      <label for="peaugeot"> Peaugeot</label>
+      <input id="Peaugeot" type="radio" />
+      <label for="Ferari">Ferari</label>
+      <input id="Ferrai" type="radio" />
+      <label for="Volvo">Volvo</label>
+      <input type="radio" name="car-brand" id="Volvo" />
+      <br />
+      <!-- checkbox input -->
+      <p>What type of transport do you use reguraly</p>
+      <label for="bike">bike</label>
+      <input type="checkbox" id="bike" value="bike" name="bike" />
+      <label for="car"> car</label>
+      <input id="car" type="checkbox" name="car" value="car" />
+      <label for="bus">bus</label>
+      <input id="bus" type="checkbox" name="bus" value="bus" />
+      <br />
+      <!-- date  -->
+      <label for="birthday">Date of birth</label>
+      <input type="date" id="birthday" name="birthday" />
+      <br />
+      <!-- email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="myfile">Selcet a file</label>
+      <br />
+      <input type="file" id="myfile" name="myfile" />
+      <br />
+      <label for="age">Enter your age(between 1-150)</label>
+      <input type="number" id="age" name="age" min="1" max="150" value="30" />
+      <br />
+      <label for="vol">select volume</label>
+      <input type="range" id="vol" name="vol" min="0" max="10" />
+      <br />
+      <label for="search">search google</label>
+      <input type="search" id="search" name="search" />
+      <br />
+      <label for="tel">Tel:</label>
+      <input
+        type="tel"
+        id="tel"
+        name="tel"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+      />
+      <br />
+      <label for="homepage">Add your homepage</label>
+      <input type="url" id="homepage" name="homepage" disabled />
+      <br />
+      <br />
+      <label for="password">password</label>
+      <input type="password" id="pasword" name="password" />
+      <br />
+      <br />
+      <label for="problem">What is your issue</label>
+      <textarea name="problem" id="problem" rows="5" cols="30"></textarea>
+      <br />
+      <br />
+      <label for="country">Select your country</label>
+      <select name="country" id="country">
+        <option value="no">Norway</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">canada</option>
+      </select>
+      <br />
+      <br />
+      <label for="browsers">Choose a browsers</label>
+      <input list="browser" name="browsers" id="browsers" />
+      <datalist id="browsers">
+        <option value="firefox"></option>
+        <option value="safari"></option>
+        <option value="Edge"></option>
+      </datalist>
+
+      <br />
+      <!-- using image as submit -->
+      <input type="image" src="images/subhome-ai.jpg" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
